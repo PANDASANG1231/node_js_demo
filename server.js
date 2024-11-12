@@ -1,21 +1,6 @@
 const express = require('express');
 const path = require('path');
-const fs = require('fs');
-
-function logAllFiles(dirPath) {
-  fs.readdir(dirPath, { withFileTypes: true }, (err, files) => {
-    if (err) {
-      console.error(`Error reading directory: ${err}`);
-      return;
-    }
-
-    files.forEach((file) => {
-      const fullPath = path.join(dirPath, file.name);
-      console.log(fullPath);
-    });
-  });
-}
-
+const { logAllFiles } = require('./functions/file_handle');
 
 const app = express();
 
@@ -29,18 +14,16 @@ app.use(express.static('public'));
 const indexRouter = require('./routes/index');
 const overviewRouter = require('./routes/overview');
 const transactionsRouter = require('./routes/transactions');
-
-// // Middleware to track current path
-// app.use((req, res, next) => {
-//   res.locals.path = req.path;
-//   next();
-// });
+const cardsRouter = require('./routes/cards');
 
 // Use routes
 app.use('/', indexRouter);
 app.use('/overview', overviewRouter);
 app.use('/transactions', transactionsRouter);
+app.use('/cards', cardsRouter);
 
+const apiRouter = require('./routes/api/getSankey');
+app.use('/api', apiRouter);
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
