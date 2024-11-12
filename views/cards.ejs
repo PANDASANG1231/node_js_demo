@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Weekly Sumup | CloudCash</title>
+        <link rel="stylesheet" href="/css/style.css">
+        <link rel="stylesheet" href="/css/sidebar_style.css">
+    </head>
+    <body>
+        <aside class="sidebar">
+            <div class="sidebar-logo">
+                <img src="/images/cloudcash-logo.png" alt="CloudCash">
+                <span>cloudcash</span>
+            </div>
+        
+            <nav class="sidebar-nav">
+                <a href="/overview" class="nav-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                        <polyline points="9 22 9 12 15 12 15 22"/>
+                    </svg>
+                    Overview
+                </a>
+        
+                <a href="/transactions" class="nav-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="12" y1="1" x2="12" y2="23"/>
+                        <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+                    </svg>
+                    Transactions
+                </a>
+        
+                <a href="/cards" class="nav-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="1" y="4" width="22" height="16" rx="2" ry="2"/>
+                        <line x1="1" y1="10" x2="23" y2="10"/>
+                    </svg>
+                    Cards
+                </a>
+
+                <a href="/invoices" class="nav-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                        <polyline points="14 2 14 8 20 8"/>
+                        <line x1="16" y1="13" x2="8" y2="13"/>
+                        <line x1="16" y1="17" x2="8" y2="17"/>
+                        <polyline points="10 9 9 9 8 9"/>
+                    </svg>
+                    Invoices
+                </a>
+        
+                <a href="/goals" class="nav-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10"/>
+                        <line x1="12" y1="8" x2="12" y2="16"/>
+                        <line x1="8" y1="12" x2="16" y2="12"/>
+                    </svg>
+                    Goals
+                </a>
+        
+                <a href="/settings" class="nav-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="3"/>
+                        <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/>
+                    </svg>
+                    Settings
+                </a>
+
+            </nav>
+        </aside>
+        
+        <main class="main-content">
+            <!-- Header Section -->
+            <div class="header-section">
+                <div class="header-left">
+                    <h1 class="page-title">Weekly sumup</h1>
+                    <p class="page-subtitle">Get summary of your weekly online transactions here.</p>
+                </div>
+                <div class="header-right">
+                    <div class="notification">
+                        <img src="/images/mail.svg" alt="Mail" class="icon">
+                        <img src="/images/bell.svg" alt="Notifications" class="icon">
+                    </div>
+                    <div class="user-profile">
+                        <img src="/images/avatar.png" alt="User" class="avatar">
+                        <div class="user-info">
+                            <span class="user-name"><%= data.user.name %></span>
+                            <span class="user-role">Admin account</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Grid Section -->
+            <div class="content-grid">
+
+                <div class="left-section">
+                    <h2 class="section-title">Card</h2>
+                    <div class="card-container">
+                        <head>
+                            <title>JavaScript Sankey Diagram</title>
+                            <script src="https://cdn.anychart.com/releases/8.11.0/js/anychart-core.min.js"></script>
+                            <script src="https://cdn.anychart.com/releases/8.11.0/js/anychart-sankey.min.js"></script>
+                            <style type="text/css">      
+                            html, body, #container { 
+                                width: 1000px; height: 500px; margin: 0; padding: 0; 
+                            } 
+                            </style>
+                        </head>
+                        <body>  
+                            <div id="container"></div>
+                            <script>
+                                // Using async/await with IIFE (Immediately Invoked Function Expression)
+                                (async function() {
+                                    try {
+                                        // Fetch data from API
+                                        const response = await fetch('/api/sankeyData');
+                                        const data = await response.json();
+                        
+                                        // Create chart when document is ready
+                                        anychart.onDocumentReady(function() {
+                                            // create a sankey diagram instance
+                                            let chart = anychart.sankey();
+                        
+                                            // load the data to the sankey diagram instance
+                                            chart.data(data);
+                        
+                                            // set the chart's padding
+                                            chart.padding(20, 40);
+                        
+                                            // configure a custom color palette
+                                            chart.palette([
+                                                "#f5dc50",
+                                                "#e1a03c",
+                                                "#c87d5a",
+                                                "#fff0c8",
+                                                "#aa96b4",
+                                                "#6e5a7d",
+                                                "#e19196",
+                                                "#419bd2",
+                                                "#46afaa",
+                                                "#5a5050"
+                                            ]);
+                        
+                                            // customize the nodes
+                                            chart.nodeWidth("40%");
+                                            chart.nodePadding(30);
+                                            chart.node().normal().labels().fontSize(14);
+                                            chart.node().labels().useHtml(true);
+                                            chart.node().labels().format(
+                                                "<span style='font-weight:bold'>{%name}</span><br>{%value}"
+                                            );
+                        
+                                            // customize the flows
+                                            chart.flow({
+                                                normal: {
+                                                    fill: function() {
+                                                        return anychart.color.lighten(this.sourceColor, 0.5) + " " + 0.3;
+                                                    }
+                                                },
+                                                hovered: {
+                                                    fill: function() {
+                                                        return this.sourceColor + " " + 0.8;
+                                                    }
+                                                }
+                                            });
+                        
+                                            // add a title
+                                            chart.title()
+                                                .enabled(true)
+                                                .useHtml(true)
+                                                .text(
+                                                    '<span style="color: #2b2b2b; font-size:20px;">Titanic Survivors</span>' +
+                                                    '<br/><span style="color:#00bfa5; font-size: 16px;">(by gender, class, and survival)</span>'
+                                                );
+                        
+                                            // set container and draw
+                                            chart.container("container");
+                                            chart.draw();
+                                        });
+                                    } catch (error) {
+                                        console.error('Error fetching or rendering data:', error);
+                                    }
+                                })();
+                            </script>
+                        </body>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>
